@@ -1,0 +1,128 @@
+#colorOne, #colorTwo{
+width: 50px;
+    height: 50px;
+border:none;
+    box-shadow: 3px 3px 0px lightgray, 5px 5px 0px lightgray;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+#container{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
+#bodybg{
+    width: 400px;
+    height: 200px;
+    background: linear-gradient(to right,blue,red);
+    margin: auto;
+    margin-top: 20px;
+}
+
+
+h2{
+    text-transform: uppercase;
+    color: #f2395a;
+    transform: skew(-5deg,-5deg) rotate(5deg);
+    -webkit-transform: skew(-5deg,-5deg) rotate(5deg);
+    -webkit-transform-origin:center top;
+    transform-origin:center top;
+    text-shadow:1px 1px #d10e31,
+            2px 2px #d10e31,
+            3px 3px #d10e31,
+            4px 4px #d10e31,
+            5px 5px #d10e31,
+            6px 6px #d10e31,
+            7px 7px #d10e31,
+            8px 8px #890920,
+            9px 9px #890920,
+            10px 10px #890920,
+            11px 11px 15px rgba(0,0,0,0.5);
+}
+
+
+h1,h4{
+    text-transform: uppercase;
+    color: #00b3b4;
+    display: inline-block;
+    position: relative;
+    text-shadow: 3px 3px 0px #e7eef1, 8px 8px 0px rgba(0,0,0,0.1);
+}
+
+
+
+ul li{
+    list-style: none;
+    display: inline;
+    margin: 0px 20px;
+}
+
+ul li a{
+    color: #fff;
+}
+ul li a:hover{
+    color: #fff;
+}
+.fa{
+font-size:30px;
+}
+
+.fa::before{
+    background: transparent;
+    border: 1px solid #fff;
+    display: block;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    padding: 11px;
+    transition: .3s ease;
+    animation-name: rumi;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.fa:hover::before{
+    background: #fff;
+    color: #000;
+}
+
+
+@keyframes rumi{
+    
+    0%{
+        border-color: red;
+    }
+      25%{
+        border-color: darkcyan;
+    }
+    
+      50%{
+        border-color: tomato;
+    }
+    
+    75%{
+        border-color: green;
+    }
+    
+      100%{
+        border-color: yellow;
+    }
+    
+}
+
+
+
+@media only screen and (max-width:768px){
+
+h1{
+padding:10px;
+}
+
+}
+
+
